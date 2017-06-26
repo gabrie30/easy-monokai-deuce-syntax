@@ -1,0 +1,142 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor.is-focused .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+  background-color: #49483E;
+}
+
+.syntax--comment {
+  color: #75715E;
+}
+
+.syntax--string {
+  color: #c9c26b;
+}
+
+.syntax--constant.syntax--numeric {
+  color: #a077ef;
+}
+
+.syntax--constant.syntax--language {
+  color: #a077ef;
+}
+
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
+  color: #a177ef;
+}
+
+.syntax--variable {
+}
+
+.syntax--keyword {
+  color: #d07e22;
+}
+
+.syntax--storage {
+  color: #d07e22;
+}
+
+.syntax--storage.syntax--type {
+  font-style: italic;
+  color: #4ba6cb;
+}
+
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: #80b028;
+}
+
+.syntax--entity.syntax--other.syntax--inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #80b028;
+}
+
+.syntax--entity.syntax--name.syntax--function {
+  color: #80b028;
+}
+
+.syntax--variable.syntax--parameter {
+  font-style: italic;
+  color: #d07e22;
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+  color: #4ba6cb;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #80b028;
+}
+
+.syntax--support.syntax--function {
+  color: #4ba6cb;
+}
+
+.syntax--support.syntax--constant {
+  color: #4ba6cb;
+}
+
+.syntax--support.syntax--type, .syntax--support.syntax--class {
+  font-style: italic;
+  color: #4ba6cb;
+}
+
+.syntax--support.syntax--other.syntax--variable {
+}
+
+.syntax--invalid {
+  color: #F8F8F0;
+  background-color: #da540e;
+}
+
+.syntax--invalid.syntax--deprecated {
+  color: #F8F8F0;
+  background-color: #AE81FF;
+}
+
+.syntax--variable.syntax--other.syntax--constant.syntax--elixir {
+  color: #80b028;
+}
+
+.syntax--entity.syntax--name.syntax--type.syntax--module.syntax--elixir {
+  color: #80b028;
+}
